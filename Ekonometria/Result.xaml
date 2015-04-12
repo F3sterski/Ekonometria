@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="#FF4C0064">
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,19,0,0" VerticalAlignment="Top" Width="100" Source="Assets/SumaX.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="229,19,0,0" VerticalAlignment="Top" Width="100" Source="Assets/SumaY.png"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="10,124,0,0" Source="Assets/SredniaX.png"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="229,164,0,0" Source="Assets/SredniaY.png"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="0,287,0,0" Source="Assets/Alfa.png"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="209,287,0,0" Source="Assets/Beta.png"/>
 
     </Grid>
 </Page>
