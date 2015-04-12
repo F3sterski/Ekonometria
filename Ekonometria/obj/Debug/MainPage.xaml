@@ -7,14 +7,25 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Hub>
+        <HubSection>
+            <DataTemplate>
+                <Grid Background="#FF4C0064" Margin="-19,-37,-39.167,0">
+                    <TextBox x:Name="TextBoxY" HorizontalAlignment="Left" Margin="192,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="159" FontSize="72" PlaceholderText="Y" InputScope="Number" Background="#FF848495" TextAlignment="Center" RenderTransformOrigin="-0.671,0.497"/>
+                    <Button x:Name="ButtonClear" Content="Clear all" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,334,0,0" Width="278" Height="119" FontFamily="Simplified Arabic Fixed" FontSize="36" FontWeight="Bold"/>
+                    <TextBox x:Name="TextBoxX" HorizontalAlignment="Left" Margin="10,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="159" FontSize="72" InputScope="Number" ToolTipService.ToolTip="" PlaceholderText="X" AcceptsReturn="True" Background="#FF848495" TextAlignment="Center"/>
+                    <Button x:ConnectionId='1' x:Name="ButtonAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,203,0,0" Width="278" Height="119" FontFamily="Simplified Arabic Fixed" FontSize="36"                     FontWeight="Bold"/>
+                    <Button x:Name="ButtonCompute" Content="Compute" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,471,0,0" Width="278" Height="119" FontFamily="Simplified Arabic Fixed" FontSize="36" FontWeight="Bold"/>
+                </Grid>
+            </DataTemplate>
+        </HubSection>
+        <HubSection Height="667" Width="474">
+            <DataTemplate>
+                <Grid Background="#FF4C0064" Margin="-22,-40,-39.167,0" >
 
-    <Grid Background="#FF4C0064">
-        <TextBox x:Name="TextBoxY" HorizontalAlignment="Left" Margin="214,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="159" FontSize="72" PlaceholderText="Y" InputScope="Number" Background="#FF848495" TextAlignment="Center"/>
-        <Button x:Name="ButtonClear" Content="Clear all" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,334,0,0" Width="321" Height="119" FontFamily="Simplified Arabic Fixed" FontSize="36" FontWeight="Bold"/>
-        <TextBox x:Name="TextBoxX" HorizontalAlignment="Left" Margin="10,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="159" FontSize="72" InputScope="Number" ToolTipService.ToolTip="" PlaceholderText="X" AcceptsReturn="True" Background="#FF848495" TextAlignment="Center"/>
-        <Button x:ConnectionId='1' x:Name="ButtonAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,203,0,0" Width="321" Height="119" FontFamily="Simplified Arabic Fixed" FontSize="36"                     FontWeight="Bold"/>
-        <Button x:Name="ButtonCompute" Content="Compute" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,471,0,0" Width="321" Height="119" FontFamily="Simplified Arabic Fixed" FontSize="36" FontWeight="Bold"/>
-
-    </Grid>
+                </Grid>
+            </DataTemplate>
+        </HubSection>
+    </Hub>
 </Page>
 

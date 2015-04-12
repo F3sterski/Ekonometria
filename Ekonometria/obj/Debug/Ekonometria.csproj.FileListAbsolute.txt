@@ -35,3 +35,40 @@ C:\Users\Klausiaczek\documents\visual studio 2013\Projects\Ekonometria\Ekonometr
 C:\Users\Klausiaczek\documents\visual studio 2013\Projects\Ekonometria\Ekonometria\obj\Debug\Result.g.cs
 C:\Users\Klausiaczek\documents\visual studio 2013\Projects\Ekonometria\Ekonometria\obj\Debug\Result.xaml
 C:\Users\Klausiaczek\documents\visual studio 2013\Projects\Ekonometria\Ekonometria\obj\Debug\Result.xbf
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\App.xbf
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\MainPage.xbf
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\Result.xbf
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\Ekonometria.xr.xml
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\Ekonometria.exe
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\Ekonometria.pdb
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\resources.pri
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\AppxManifest.xml
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\Ekonometria.build.appxrecipe
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\App.g.i.cs
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\App.g.cs
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\MainPage.g.i.cs
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\MainPage.g.cs
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\Result.g.i.cs
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\Result.g.cs
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\App.xaml
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\Result.xaml
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\App.xbf
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\Result.xbf
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\MainPage.xaml
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\MainPage.xbf
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\Ekonometria.exe
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\Ekonometria.pdb
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\priconfig.xml
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\priconfig.xml.intermediate
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\layout.resfiles
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\layout.resfiles.intermediate
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\resources.resfiles
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\resources.resfiles.intermediate
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\pri.resfiles
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\pri.resfiles.intermediate
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\qualifiers.txt
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\obj\Debug\ProjectArchitectures.txt
