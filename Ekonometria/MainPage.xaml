@@ -19,10 +19,13 @@
                 </Grid>
             </DataTemplate>
         </HubSection>
-        <HubSection Height="667" Width="474">
+        <HubSection Height="667" Width="401">
             <DataTemplate>
                 <Grid Background="#FF4C0064" Margin="-22,-40,-39.167,0" >
-                    <TextBlock HorizontalAlignment="Left" Margin="49,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="579" Width="257" RenderTransformOrigin="0.5,0.5" FontSize="22" Text="test"/>
+                    <ScrollViewer HorizontalAlignment="Left" Height="438" Margin="10,38,0,0" VerticalAlignment="Top" Width="388">
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="420" Width="372" RenderTransformOrigin="0.5,0.5" FontSize="33" Text="test"/>
+                    </ScrollViewer>
+                    <Button x:Name="ButtonCompute" Content="Delete Last" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,508,0,0" Width="326" Height="142" FontFamily="Simplified Arabic Fixed" FontSize="36" FontWeight="Bold"/>
                 </Grid>
             </DataTemplate>
         </HubSection>
