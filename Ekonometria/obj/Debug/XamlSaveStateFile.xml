@@ -1,5 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\klausiaczek\documents\visual studio 2013\projects\ekonometria\ekonometria\obj\debug\intermediatexaml\ekonometria.exe" HashGuid="58d2fd3c-8f96-d269-3a22-f2bbb5cde665" />
+    <ReferenceAssembly PathName="c:\users\adam\source\repos\ekonometria\packages\oxyplot.core.2015.1.836-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+monoandroid1+monotouch1+xamarin.ios10\oxyplot.dll" HashGuid="476055cc-d231-0eb9-ae98-d78461d148a6" />
+    <ReferenceAssembly PathName="c:\users\adam\source\repos\ekonometria\packages\oxyplot.windowsuniversal.2015.1.836-alpha\lib\portable-windows8+wpa81\oxyplot.windowsuniversal.dll" HashGuid="3214857b-695c-9366-d103-5403300c3b30" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

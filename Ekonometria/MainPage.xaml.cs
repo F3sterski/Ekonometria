@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,6 +13,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
+using Windows.Storage;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -22,10 +25,13 @@ namespace Ekonometria
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+        Windows.Storage.StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+
         public MainPage()
         {
             this.InitializeComponent();
-
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
@@ -45,9 +51,55 @@ namespace Ekonometria
             // this event is handled for you.
         }
 
-        private void Dodaj_Click(object sender, RoutedEventArgs e)
+        private int Find_Last_Empty()
+        {
+            int i = 1;
+            while (true)
+            {
+                if (localSettings.Values["x" + i] == null) return i;
+                i++;
+            }
+        }
+
+
+        private async void Dodaj_Click(object sender, RoutedEventArgs e)
+        {
+            if (InputX.Text == "" || InputY.Text == "")
+            {
+                MessageDialog msgbox = new MessageDialog("X or Y is empty");
+                await msgbox.ShowAsync(); 
+            }
+            else
+            {
+                int pos = Find_Last_Empty();
+                localSettings.Values["x" + pos] = InputX.Text;
+                localSettings.Values["y" + pos] = InputY.Text;
+                InputX.Text = "";
+                InputY.Text = "";
+            }
+
+        }
+
+        private void ButtonSeeData_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Data));
+        }
+
+        private async void ButtonCompute_Click(object sender, RoutedEventArgs e)
         {
 
+            int last = Find_Last_Empty();
+            if (last < 4)
+            {
+                MessageDialog msgbox = new MessageDialog("You need at least 3 points");
+                await msgbox.ShowAsync(); 
+            }
+            else
+            {
+                Frame.Navigate(typeof(Result));
+            }
+
+            
         }
     }
 }
