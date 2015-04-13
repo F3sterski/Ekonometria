@@ -285,7 +285,6 @@ namespace Ekonometria.Ekonometria_XamlTypeInfo
                 userType = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_4_MainViewModel;
                 userType.AddMemberName("MyModel");
-                userType.AddMemberName("MyModel2");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -449,107 +448,102 @@ namespace Ekonometria.Ekonometria_XamlTypeInfo
             var that = (global::Ekonometria.MainViewModel)instance;
             return that.MyModel;
         }
-        private object get_1_MainViewModel_MyModel2(object instance)
-        {
-            var that = (global::Ekonometria.MainViewModel)instance;
-            return that.MyModel2;
-        }
-        private object get_2_PlotView_Model(object instance)
+        private object get_1_PlotView_Model(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.Model;
         }
-        private void set_2_PlotView_Model(object instance, object Value)
+        private void set_1_PlotView_Model(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             that.Model = (global::OxyPlot.PlotModel)Value;
         }
-        private object get_3_PlotView_Controller(object instance)
+        private object get_2_PlotView_Controller(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.Controller;
         }
-        private void set_3_PlotView_Controller(object instance, object Value)
+        private void set_2_PlotView_Controller(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             that.Controller = (global::OxyPlot.IPlotController)Value;
         }
-        private object get_4_PlotView_DefaultTrackerTemplate(object instance)
+        private object get_3_PlotView_DefaultTrackerTemplate(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.DefaultTrackerTemplate;
         }
-        private void set_4_PlotView_DefaultTrackerTemplate(object instance, object Value)
+        private void set_3_PlotView_DefaultTrackerTemplate(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             that.DefaultTrackerTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
         }
-        private object get_5_PlotView_HandleRightClicks(object instance)
+        private object get_4_PlotView_HandleRightClicks(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.HandleRightClicks;
         }
-        private void set_5_PlotView_HandleRightClicks(object instance, object Value)
+        private void set_4_PlotView_HandleRightClicks(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             that.HandleRightClicks = (global::System.Boolean)Value;
         }
-        private object get_6_PlotView_IsMouseWheelEnabled(object instance)
+        private object get_5_PlotView_IsMouseWheelEnabled(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.IsMouseWheelEnabled;
         }
-        private void set_6_PlotView_IsMouseWheelEnabled(object instance, object Value)
+        private void set_5_PlotView_IsMouseWheelEnabled(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             that.IsMouseWheelEnabled = (global::System.Boolean)Value;
         }
-        private object get_7_PlotView_ZoomRectangleTemplate(object instance)
+        private object get_6_PlotView_ZoomRectangleTemplate(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.ZoomRectangleTemplate;
         }
-        private void set_7_PlotView_ZoomRectangleTemplate(object instance, object Value)
+        private void set_6_PlotView_ZoomRectangleTemplate(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             that.ZoomRectangleTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
         }
-        private object get_8_PlotView_TrackerDefinitions(object instance)
+        private object get_7_PlotView_TrackerDefinitions(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.TrackerDefinitions;
         }
-        private object get_9_TrackerDefinition_TrackerKey(object instance)
+        private object get_8_TrackerDefinition_TrackerKey(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.TrackerDefinition)instance;
             return that.TrackerKey;
         }
-        private void set_9_TrackerDefinition_TrackerKey(object instance, object Value)
+        private void set_8_TrackerDefinition_TrackerKey(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.TrackerDefinition)instance;
             that.TrackerKey = (global::System.String)Value;
         }
-        private object get_10_TrackerDefinition_TrackerTemplate(object instance)
+        private object get_9_TrackerDefinition_TrackerTemplate(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.TrackerDefinition)instance;
             return that.TrackerTemplate;
         }
-        private void set_10_TrackerDefinition_TrackerTemplate(object instance, object Value)
+        private void set_9_TrackerDefinition_TrackerTemplate(object instance, object Value)
         {
             var that = (global::OxyPlot.WindowsUniversal.TrackerDefinition)instance;
             that.TrackerTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
         }
-        private object get_11_PlotView_ActualModel(object instance)
+        private object get_10_PlotView_ActualModel(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.ActualModel;
         }
-        private object get_12_PlotView_ClientArea(object instance)
+        private object get_11_PlotView_ClientArea(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.ClientArea;
         }
-        private object get_13_PlotView_ActualController(object instance)
+        private object get_12_PlotView_ActualController(object instance)
         {
             var that = (global::OxyPlot.WindowsUniversal.PlotView)instance;
             return that.ActualController;
@@ -568,90 +562,84 @@ namespace Ekonometria.Ekonometria_XamlTypeInfo
                 xamlMember.Getter = get_0_MainViewModel_MyModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Ekonometria.MainViewModel.MyModel2":
-                userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Ekonometria.MainViewModel");
-                xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "MyModel2", "OxyPlot.PlotModel");
-                xamlMember.Getter = get_1_MainViewModel_MyModel2;
-                xamlMember.SetIsReadOnly();
-                break;
             case "OxyPlot.WindowsUniversal.PlotView.Model":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "Model", "OxyPlot.PlotModel");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_PlotView_Model;
-                xamlMember.Setter = set_2_PlotView_Model;
+                xamlMember.Getter = get_1_PlotView_Model;
+                xamlMember.Setter = set_1_PlotView_Model;
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.Controller":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "Controller", "OxyPlot.IPlotController");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_PlotView_Controller;
-                xamlMember.Setter = set_3_PlotView_Controller;
+                xamlMember.Getter = get_2_PlotView_Controller;
+                xamlMember.Setter = set_2_PlotView_Controller;
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.DefaultTrackerTemplate":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "DefaultTrackerTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_PlotView_DefaultTrackerTemplate;
-                xamlMember.Setter = set_4_PlotView_DefaultTrackerTemplate;
+                xamlMember.Getter = get_3_PlotView_DefaultTrackerTemplate;
+                xamlMember.Setter = set_3_PlotView_DefaultTrackerTemplate;
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.HandleRightClicks":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "HandleRightClicks", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_PlotView_HandleRightClicks;
-                xamlMember.Setter = set_5_PlotView_HandleRightClicks;
+                xamlMember.Getter = get_4_PlotView_HandleRightClicks;
+                xamlMember.Setter = set_4_PlotView_HandleRightClicks;
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.IsMouseWheelEnabled":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "IsMouseWheelEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_PlotView_IsMouseWheelEnabled;
-                xamlMember.Setter = set_6_PlotView_IsMouseWheelEnabled;
+                xamlMember.Getter = get_5_PlotView_IsMouseWheelEnabled;
+                xamlMember.Setter = set_5_PlotView_IsMouseWheelEnabled;
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.ZoomRectangleTemplate":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "ZoomRectangleTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_PlotView_ZoomRectangleTemplate;
-                xamlMember.Setter = set_7_PlotView_ZoomRectangleTemplate;
+                xamlMember.Getter = get_6_PlotView_ZoomRectangleTemplate;
+                xamlMember.Setter = set_6_PlotView_ZoomRectangleTemplate;
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.TrackerDefinitions":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "TrackerDefinitions", "System.Collections.ObjectModel.ObservableCollection`1<OxyPlot.WindowsUniversal.TrackerDefinition>");
-                xamlMember.Getter = get_8_PlotView_TrackerDefinitions;
+                xamlMember.Getter = get_7_PlotView_TrackerDefinitions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OxyPlot.WindowsUniversal.TrackerDefinition.TrackerKey":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.TrackerDefinition");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "TrackerKey", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_TrackerDefinition_TrackerKey;
-                xamlMember.Setter = set_9_TrackerDefinition_TrackerKey;
+                xamlMember.Getter = get_8_TrackerDefinition_TrackerKey;
+                xamlMember.Setter = set_8_TrackerDefinition_TrackerKey;
                 break;
             case "OxyPlot.WindowsUniversal.TrackerDefinition.TrackerTemplate":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.TrackerDefinition");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "TrackerTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_TrackerDefinition_TrackerTemplate;
-                xamlMember.Setter = set_10_TrackerDefinition_TrackerTemplate;
+                xamlMember.Getter = get_9_TrackerDefinition_TrackerTemplate;
+                xamlMember.Setter = set_9_TrackerDefinition_TrackerTemplate;
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.ActualModel":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "ActualModel", "OxyPlot.PlotModel");
-                xamlMember.Getter = get_11_PlotView_ActualModel;
+                xamlMember.Getter = get_10_PlotView_ActualModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.ClientArea":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "ClientArea", "OxyPlot.OxyRect");
-                xamlMember.Getter = get_12_PlotView_ClientArea;
+                xamlMember.Getter = get_11_PlotView_ClientArea;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OxyPlot.WindowsUniversal.PlotView.ActualController":
                 userType = (global::Ekonometria.Ekonometria_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.WindowsUniversal.PlotView");
                 xamlMember = new global::Ekonometria.Ekonometria_XamlTypeInfo.XamlMember(this, "ActualController", "OxyPlot.IPlotController");
-                xamlMember.Getter = get_13_PlotView_ActualController;
+                xamlMember.Getter = get_12_PlotView_ActualController;
                 xamlMember.SetIsReadOnly();
                 break;
             }

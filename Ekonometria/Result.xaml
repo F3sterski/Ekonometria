@@ -35,8 +35,7 @@
                 FontSize="36" FontWeight="Bold"
                 Click="ButtonBack_Click"/>
         <Grid x:Name="ContentPanel" Margin="12,260,12,112">
-            <oxy:PlotView Model="{Binding MyModel}"/>
-            <oxy:PlotView Model="{Binding MyModel2}"/>
+            <oxy:PlotView Model="{Binding MyModel}" />
         </Grid>
     </Grid>
 </Page>

@@ -116,7 +116,6 @@ namespace Ekonometria
                 string valy = localSettings.Values["y" + i].ToString();
                 sum += ((Convert.ToDouble(valx) - avex) * (Convert.ToDouble(valy) - avey));
             }
-            localSettings.Values["Beta"] = (sum / sumM).ToString();
             return sum/sumM;
         }
 
@@ -125,7 +124,6 @@ namespace Ekonometria
             double avey = Count_Average_y();
             double avex = Count_Average_x();
             double Beta = Count_Beta();
-            localSettings.Values["Alph"] = (avey - Beta * avex).ToString();
             return avey - Beta * avex;
         }
 
@@ -271,7 +269,6 @@ namespace Ekonometria
                 string valy = localSettings.Values["y" + i].ToString();
                 sum += ((Convert.ToDouble(valx) - avex) * (Convert.ToDouble(valy) - avey));
             }
-            localSettings.Values["Beta"] = (sum / sumM).ToString();
             return sum / sumM;
         }
 
@@ -280,7 +277,6 @@ namespace Ekonometria
             double avey = Count_Average_y();
             double avex = Count_Average_x();
             double Beta = Count_Beta();
-            localSettings.Values["Alph"] = (avey - Beta * avex).ToString();
             return avey - Beta * avex;
         }
 
@@ -319,7 +315,7 @@ namespace Ekonometria
         {
           double a = Count_Alpha();
           double b = Count_Beta();
-          return a * x + b;
+          return b * x + a;
         }
 
 
@@ -344,13 +340,33 @@ namespace Ekonometria
                     lineSeries.Points.Add(new DataPoint(Convert.ToDouble(valx), Convert.ToDouble(valy)));
                     i++;
                 }
+                lineSeries.Color = OxyPlot.OxyColors.Transparent;
+                lineSeries.MarkerFill = OxyPlot.OxyColors.SteelBlue;
+                lineSeries.MarkerType = OxyPlot.MarkerType.Circle;
+                string a = null;
+                string b = null;
+                if (Count_Beta().ToString().Length > 4)
+                {
+                    b = Count_Beta().ToString().Substring(0, 4);
+                }
+                else
+                {
+                    b = Count_Beta().ToString();
+                }
 
-                double b =  Count_Beta();
-                if(b>0){
-                    this.MyModel.Series.Add(new FunctionSeries(function, min, max, 0.1, "f(x)=" + Count_Alpha() + "x+" +b));
+                if (Count_Alpha().ToString().Length > 4)
+                {
+                    a = Count_Alpha().ToString().Substring(0, 4);
+                }
+                else
+                {
+                    a = Count_Alpha().ToString();
+                }
+                if(Convert.ToDouble(a)>0){
+                    this.MyModel.Series.Add(new FunctionSeries(function, min - 2, max + 2, 0.1, "f(x)=" + b + "x+" + a));
                 }
                 else{
-                    this.MyModel.Series.Add(new FunctionSeries(function, min, max, 0.1, "f(x)=" + Count_Alpha() + "x" +b));
+                    this.MyModel.Series.Add(new FunctionSeries(function, min - 2, max + 2, 0.1, "f(x)=" + b + "x" + a));
                 }
                 
                 this.MyModel.Series.Add(lineSeries);
