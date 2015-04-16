@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="OxyPlot.WindowsUniversal" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="OxyPlot.WindowsUniversal">
+				<NamedResource name="OxyPlot.WindowsUniversal.xr.xml" uri="ms-resource://OxyPlot.WindowsUniversal/Files/OxyPlot.WindowsUniversal/OxyPlot.WindowsUniversal.xr.xml">
+					<Candidate type="Path">
+						<Value>OxyPlot.WindowsUniversal\OxyPlot.WindowsUniversal.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://OxyPlot.WindowsUniversal/Files/OxyPlot.WindowsUniversal/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>OxyPlot.WindowsUniversal\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
