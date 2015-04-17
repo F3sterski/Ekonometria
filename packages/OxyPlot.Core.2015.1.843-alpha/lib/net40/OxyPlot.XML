@@ -14485,6 +14485,17 @@
             <param name="outliers">The outliers.</param>
             <param name="tag">The tag.</param>
         </member>
+        <member name="M:OxyPlot.Series.BoxPlotItem.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OxyPlot.Series.BoxPlotItem"/> struct.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="lowerWhisker">The lower whisker.</param>
+            <param name="boxBottom">The box bottom.</param>
+            <param name="median">The median.</param>
+            <param name="boxTop">The box top.</param>
+            <param name="upperWhisker">The upper whisker.</param>
+        </member>
         <member name="M:OxyPlot.Series.BoxPlotItem.ToString">
             <summary>
             Returns a <see cref="T:System.String"/> that represents this instance.
@@ -14514,6 +14525,12 @@
             Gets or sets the median.
             </summary>
             <value>The median.</value>
+        </member>
+        <member name="P:OxyPlot.Series.BoxPlotItem.Mean">
+            <summary>
+            Gets or sets the mean.
+            </summary>
+            <value>The mean.</value>
         </member>
         <member name="P:OxyPlot.Series.BoxPlotItem.Outliers">
             <summary>
@@ -14663,13 +14680,25 @@
             <summary>
             Gets or sets the size of the median point.
             </summary>
-            <remarks>This property is only used when MedianStyle = Dot.</remarks>
+            <remarks>This property is only used when ShowMedianAsDot = true.</remarks>
         </member>
         <member name="P:OxyPlot.Series.BoxPlotSeries.MedianThickness">
             <summary>
             Gets or sets the median thickness, relative to the StrokeThickness.
             </summary>
             <value>The median thickness.</value>
+        </member>
+        <member name="P:OxyPlot.Series.BoxPlotSeries.MeanPointSize">
+            <summary>
+            Gets or sets the size of the mean point.
+            </summary>
+            <remarks>This property is only used when ShowMeanAsDot = true.</remarks>
+        </member>
+        <member name="P:OxyPlot.Series.BoxPlotSeries.MeanThickness">
+            <summary>
+            Gets or sets the mean thickness, relative to the StrokeThickness.
+            </summary>
+            <value>The mean thickness.</value>
         </member>
         <member name="P:OxyPlot.Series.BoxPlotSeries.OutlierSize">
             <summary>
@@ -14705,6 +14734,11 @@
         <member name="P:OxyPlot.Series.BoxPlotSeries.ShowMedianAsDot">
             <summary>
             Gets or sets a value indicating whether to show the median as a dot.
+            </summary>
+        </member>
+        <member name="P:OxyPlot.Series.BoxPlotSeries.ShowMeanAsDot">
+            <summary>
+            Gets or sets a value indicating whether to show the mean as a dot.
             </summary>
         </member>
         <member name="P:OxyPlot.Series.BoxPlotSeries.Stroke">

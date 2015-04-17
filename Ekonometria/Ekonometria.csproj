@@ -131,15 +131,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="OxyPlot">
-      <HintPath>..\packages\OxyPlot.Core.2015.1.836-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
-    </Reference>
-    <Reference Include="OxyPlot.WindowsUniversal">
-      <HintPath>..\packages\OxyPlot.WindowsUniversal.2015.1.836-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal.dll</HintPath>
-    </Reference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.2015.1.843-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.WindowsUniversal">
+      <HintPath>..\packages\OxyPlot.WindowsUniversal.2015.1.843-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

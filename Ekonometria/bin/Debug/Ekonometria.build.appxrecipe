@@ -19,10 +19,10 @@
     <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\Ekonometria.exe">
       <PackagePath>Ekonometria.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.Core.2015.1.836-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll">
+    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.Core.2015.1.843-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll">
       <PackagePath>OxyPlot.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.WindowsUniversal.2015.1.836-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal.dll">
+    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.WindowsUniversal.2015.1.843-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal.dll">
       <PackagePath>OxyPlot.WindowsUniversal.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\Assets\Alfa.png">
@@ -82,10 +82,10 @@
     <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\Ekonometria.xr.xml">
       <PackagePath>Ekonometria.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.WindowsUniversal.2015.1.836-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal\OxyPlot.WindowsUniversal.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.WindowsUniversal.2015.1.843-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal\OxyPlot.WindowsUniversal.xr.xml">
       <PackagePath>OxyPlot.WindowsUniversal\OxyPlot.WindowsUniversal.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.WindowsUniversal.2015.1.836-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\packages\OxyPlot.WindowsUniversal.2015.1.843-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal\Themes\Generic.xbf">
       <PackagePath>OxyPlot.WindowsUniversal\Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Source\Repos\Ekonometria\Ekonometria\bin\Debug\resources.pri">

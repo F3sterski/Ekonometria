@@ -15,6 +15,10 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Popups;
 using Windows.Storage;
+using System.Text;
+using Windows.UI.Notifications;
+using Windows.Data.Xml.Dom;
+using Windows.UI.StartScreen;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -29,8 +33,27 @@ namespace Ekonometria
         Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
         Windows.Storage.StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
 
+        private void TileUpdate(String text){
+            StringBuilder sb = new StringBuilder("<tile>");
+            sb.Append("<visual version=\"2\">");
+            sb.Append("<binding template=\"TileSquare150x150Text04\" fallback=\"TileSquareText04\">");
+            sb.Append("<image id=\"1\" src=\"ms-appx:///Assets/Logo.scale-240.png\"/>");
+            sb.Append("<text id='1'>"+text+"</text>");
+            sb.Append("</binding>");
+            sb.Append("</visual>");
+            sb.Append("</tile>");
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.LoadXml(sb.ToString());
+            TileNotification tileNotification = new TileNotification(xmldoc);
+            TileUpdater tileUpdator = TileUpdateManager.CreateTileUpdaterForApplication();
+            tileUpdator.Update(tileNotification);
+        }
+
         public MainPage()
         {
+
+            TileUpdate("No data");
+
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
@@ -42,13 +65,7 @@ namespace Ekonometria
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // TODO: Prepare page for display here.
 
-            // TODO: If your application contains multiple pages, ensure that you are
-            // handling the hardware Back button by registering for the
-            // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
-            // If you are using the NavigationHelper provided by some templates,
-            // this event is handled for you.
         }
 
         private int Find_Last_Empty()
@@ -72,6 +89,7 @@ namespace Ekonometria
             else
             {
                 int pos = Find_Last_Empty();
+                TileUpdate("Count: "+(pos));
                 localSettings.Values["x" + pos] = InputX.Text;
                 localSettings.Values["y" + pos] = InputY.Text;
                 InputX.Text = "";
